@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774223333842",
+    "project_id": "oulaizquizapp",
+    "storage_bucket": "oulaizquizapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774223333842:android:0faeaccfe79fbdf64be00b",
+        "android_client_info": {
+          "package_name": "com.example.oulaiz_quizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk63YRDRZAcCPB2Kh8nj43JaEF3ALCKL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
