@@ -15,7 +15,7 @@ public class Quizz3 extends AppCompatActivity {
     RadioButton rb;
     Button bNext;
     int score;
-    String RepCorrect="Non";
+    String RepCorrect="Oui";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
