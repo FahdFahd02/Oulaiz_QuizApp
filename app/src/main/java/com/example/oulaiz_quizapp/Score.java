@@ -10,11 +10,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Score extends AppCompatActivity {
     Button bLogout, bTry;
     ProgressBar progressBar;
     TextView tvScore;
     int score;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +31,15 @@ public class Score extends AppCompatActivity {
         score=intent.getIntExtra("score",0) ;
         progressBar.setProgress(100*score/5);
         tvScore.setText(100*score/5+" %");
+        mAuth = FirebaseAuth.getInstance();
+        
         //Toast.makeText(getApplicationContext(),score+"",Toast.LENGTH_SHORT).show();
         bLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Merci de votre Participation !", Toast.LENGTH_SHORT).show();
+                mAuth.signOut();
+                startActivity(new Intent(Score.this,MainActivity.class));
                 finish();
             }
         });
