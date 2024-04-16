@@ -1,5 +1,7 @@
 package com.example.oulaiz_quizapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,14 +10,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class Quizz1 extends AppCompatActivity {
     RadioGroup rg;
     RadioButton rb;
     Button bNext;
     int score=0;
-    String RepCorrect="Non";
+    String RepCorrect="Oui";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
