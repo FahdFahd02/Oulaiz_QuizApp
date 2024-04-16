@@ -15,7 +15,7 @@ public class Quizz2 extends AppCompatActivity {
     RadioButton rb;
     Button bNext;
     int score;
-    String RepCorrect="À droite";
+    String RepCorrect="A droite";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
