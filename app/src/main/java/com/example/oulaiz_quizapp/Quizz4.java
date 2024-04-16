@@ -15,7 +15,7 @@ public class Quizz4 extends AppCompatActivity {
     RadioButton rb;
     Button bNext;
     int score;
-    String RepCorrect="Le tramway est arrêté";
+    String RepCorrect="Le tramway circule";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
